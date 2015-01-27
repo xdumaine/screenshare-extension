@@ -7,6 +7,11 @@ chrome.runtime.onConnect.addListener(function(port) {
       requestScreenSharing(port, msg);
     }
 
+    if(msg.type === 'SS_UI_CHECK') {
+        msg.type = 'SS_PING';
+        port.postMessage(msg);
+    }
+
     if(msg.type === 'SS_UI_CANCEL') {
       cancelScreenSharing(msg);
     }

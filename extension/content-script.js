@@ -18,8 +18,9 @@ window.addEventListener('message', function(event) {
 	// We only accept messages from ourselves
 	if (event.source != window) return;
 
-	if (event.data.type && ((event.data.type === 'SS_UI_REQUEST') ||
-							(event.data.type === 'SS_UI_CANCEL'))) {
+	if (event.data.type === 'SS_UI_REQUEST' ||
+		event.data.type === 'SS_UI_CANCEL' ||
+		event.data.type == 'SS_UI_CHECK') {
 		port.postMessage(event.data);
 	}
 }, false);
