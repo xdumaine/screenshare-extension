@@ -1,6 +1,6 @@
 {
-  "name": "Screensharing Extension",
-  "description": "Screensharing Extension for my app",
+  "name": "PureCloud",
+  "description": "Enable screen sharing for PureCloud",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
@@ -11,12 +11,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://localhost:4300/*"],
+      "matches": [
+          "https://localhost:*/*"
+      ],
       "js": ["content-script.js"]
     }
   ],
   "permissions": [
-    "desktopCapture",
-    "https://localhost:4300/*"
+    "desktopCapture"
   ]
 }

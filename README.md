@@ -1,16 +1,6 @@
 ## Note
 
-*This project has been merged into https://github.com/GoogleChrome/webrtc in
-case something doesn't work have [a look over
-there.](https://github.com/GoogleChrome/webrtc/tree/master/samples/web/content/getusermedia/desktopcapture)*
-
-*This demo app shows you how to use a Chrome extension to access the
-`desktopCapture` API in your web-application.*
-
-(If you're writing a WebRTC app with screen sharing, and want to avoid sending
-users to `chrome://flags`)
-
-<img src="images/3.gif">
+Forked from [wpp](https://github.com/wpp/ScreenStream).
 
 ## Index
 
